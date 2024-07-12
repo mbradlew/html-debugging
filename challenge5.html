@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Square a Number</title>
+</head>
+<body>
+    <button id="squareButton">Square a Number</button>
+
+    <script>
+        // Function to prompt user for a number and alert the square of the number
+        function squareNumber() {
+            let number = prompt("Please enter a number:");
+            if (number !== null) {  // Check if user did not click "Cancel"
+                let squaredNumber = number * number;
+                alert("The square of " + number + " is " + squaredNumber);
+            }
+        }
+
+        // Added event listener to the button
+        document.getElementById("squareButton").addEventListener("click", squareNumber);
+    </script>
+</body>
+</html>
